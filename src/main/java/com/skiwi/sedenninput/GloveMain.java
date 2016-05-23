@@ -20,6 +20,12 @@ public class GloveMain {
 
         //prints the 10 closest words to "cat"
         System.out.println(wordVectors.wordsNearest("cat", 10));
+
+        //prints the 10 closest words to "kitten" - "cat" + "dog"
+        System.out.println(wordVectors.wordsNearest(Arrays.asList("kitten", "dog"), Arrays.asList("cat"), 10));
+
+        //pritns the closest word to "berlin" - "germany" + "france"
+        System.out.println(wordVectors.wordsNearest(Arrays.asList("berlin", "france"), Arrays.asList("germany"), 1));
     }
 
     public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
