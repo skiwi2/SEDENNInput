@@ -24,7 +24,7 @@ public class GloveMain {
         //prints the 10 closest words to "kitten" - "cat" + "dog"
         System.out.println(wordVectors.wordsNearest(Arrays.asList("kitten", "dog"), Arrays.asList("cat"), 10));
 
-        //pritns the closest word to "berlin" - "germany" + "france"
+        //prints the closest word to "berlin" - "germany" + "france"
         System.out.println(wordVectors.wordsNearest(Arrays.asList("berlin", "france"), Arrays.asList("germany"), 1));
     }
 
